@@ -10,8 +10,8 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
 
-import WheelDrive;
-import SwerveDrive;
+import org.usfirst.frc.team2593.robot.WheelDrive;
+import org.usfirst.frc.team2593.robot.SwerveDrive;
 
 public class Robot extends TimedRobot {
     private static final String kDefaultAuto = "Default";

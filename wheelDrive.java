@@ -1,3 +1,8 @@
+package frc.robot;
+
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.Talon;
 
 public class WheelDrive (int angleMotor, int speedMotor, int encoder) {
     this.angleMotor = new Talon(angleMotor);
