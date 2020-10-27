@@ -49,7 +49,7 @@ public class Robot extends TimedRobot {
     private WheelDrive rightBack = new WheelDrive(rbtm, rbdm, rbe);
     private WheelDirve rightFront = new WheelDirve(rftm, rfdm, rfe);
 
-    private SwerveDrive swerveDrive = new SwerveDrive (backRight, backLeft, frontRight, frontLeft);
+    private SwerveDrive swerveDrive = new SwerveDrive(backRight, backLeft, frontRight, frontLeft);
 
     //joysticks
     private Joystick leftJoy;
@@ -126,6 +126,6 @@ public class Robot extends TimedRobot {
 
     @Override
     public void teleopPeriodic() {
-        swerveDrive.drive (leftJoy.getRawAxis (1), leftJoy.getRawAxis (0), leftJoy.getRawAxis (4));
+        swerveDrive.drive(leftJoy.getRawAxis(1), leftJoy.getRawAxis(0), leftJoy.getRawAxis(4));
     }
 }
