@@ -1,10 +1,10 @@
-package frc.robot;
+package org.usfirst.frc.team2503.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
 
-import org.usfirst.frc.team2593.robot.WheelDrive;
+import org.usfirst.frc.team2503.robot.WheelDrive;
 
 private WheelDrive backRight;
 private WheelDrive backLeft;

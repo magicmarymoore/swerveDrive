@@ -1,6 +1,6 @@
 //https://jacobmisirian.gitbooks.io/frc-swerve-drive-programming/content/part-2-driving.html
 
-package frc.robot;
+package org.usfirst.frc.team2503.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
@@ -10,8 +10,8 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
 
-import org.usfirst.frc.team2593.robot.WheelDrive;
-import org.usfirst.frc.team2593.robot.SwerveDrive;
+import org.usfirst.frc.team2503.robot.WheelDrive;
+import org.usfirst.frc.team2503.robot.SwerveDrive;
 
 public class Robot extends TimedRobot {
     private static final String kDefaultAuto = "Default";
