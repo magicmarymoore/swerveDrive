@@ -6,10 +6,10 @@ import edu.wpi.first.wpilibj.Talon;
 
 import org.usfirst.frc.team2503.robot.WheelDrive;
 
-private WheelDrive backRight;
+/*private WheelDrive backRight;
 private WheelDrive backLeft;
 private WheelDrive frontRight;
-private WheelDrive frontLeft;
+private WheelDrive frontLeft;*/
 
 public class SwerveDrive(WheelDrive backRight, WheelDrive backLeft, WheelDrive frontRight, WheelDrive frontLeft) {
     this.backRight = backRight;
