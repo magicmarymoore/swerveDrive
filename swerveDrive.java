@@ -18,8 +18,8 @@ public class SwerveDrive(WheelDrive backRight, WheelDrive backLeft, WheelDrive f
     this.frontLeft = frontLeft;
 
     public void drive(double x1, double y1, double x2) {
-        public final double L = 23; //length of robot CHANGE THESE OUT FOR ACTUAL VALUES!!!!!
-        public final double W = 20; //width of robot CHANGE THESE OUT FOR ACTUAL VALUES!!!!!
+        public final double L = 22; //length of robot CHANGE THESE OUT FOR ACTUAL VALUES!!!!!
+        public final double W = 21.5; //width of robot CHANGE THESE OUT FOR ACTUAL VALUES!!!!!
 
         double r = Math.sqrt((L * L) + (W * W));
         y1 *= -1;
