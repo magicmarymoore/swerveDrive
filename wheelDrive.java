@@ -1,17 +1,23 @@
-package org.usfirst.frc.team2503.robot;
+package frc.robot.stuff;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
 
-public class WheelDrive(int angleMotor, int speedMotor, int encoder) {
-    this.angleMotor = new Talon(angleMotor);
-    this.speedMotor = new Spark(speedMotor);
-    pidController = new PIDController (1, 0, 0, new AnalogInput (encoder), this.angleMotor);
+public class WheelDrive(){
+    private Talon angleMotor;
+    private Spark speedMotor;
+    private PIDController pidController;
 
-    pidController.setOutputRange (-1, 1);
-    pidController.setContinuous ();
-    pidController.enable ();
+    public WheelDrive(int angleMotorNum, int speedMotorNum, int encoderNum) {
+        this.angleMotor = new Talon(angleMotorNum);
+        this.speedMotor = new Spark(speedMotorNum);
+        PIDController pidController = new PIDController(1, 0, 0, new AnalogInput(encoderNum), this.angleMotor);
+
+        pidController.setOutputRange (-1, 1);
+        pidController.setContinuous ();
+        pidController.enable ();
+    }
 
     private final double MAX_VOLTS = 4.95; //4.95
 
@@ -25,6 +31,8 @@ public class WheelDrive(int angleMotor, int speedMotor, int encoder) {
             setpoint = setpoint - MAX_VOLTS;
         }
 
-        pidController.setSetpoint (setpoint);
+        pidController.setSetpoint(setpoint);
+
+        angleMotor.set(pidController.calculate());
     }
 }
